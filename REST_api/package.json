@@ -1,17 +1,25 @@
 {
   "name": "exercises_rest",
   "version": "1.0.0",
-  "description": "",
   "main": "exercises_controller.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon exercises_controller.mjs"
   },
-  "author": "",
+  "author": "Matt Sanders",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.12.12",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msanders-code/React_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/msanders-code/React_app/issues"
+  },
+  "homepage": "https://github.com/msanders-code/React_app#readme",
+  "description": ""
 }
