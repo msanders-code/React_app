@@ -1,0 +1,106 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squats",
+    "reps": 30,
+    "weight": 10,
+    "unit" : "lbs",
+    "date" : "08-13-21"
+}
+
+###
+GET http://localhost:3000/exercises HTTP/1.1
+
+###
+
+PUT http://localhost:3000/exercises/61171461c522af2abce9977a HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Pullups",
+    "reps": 10,
+    "weight": 5,
+    "unit" : "lbs",
+    "date" : "08-15-20"
+}
+
+###
+DELETE http://localhost:3000/exercises/6117149fc522af2abce99784 HTTP/1.1
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Unstable Bridges",
+    "reps": 2,
+    "weight": 0,
+    "unit" : "lbs",
+    "date" : "08-15-20"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bicep Press",
+    "reps": 30,
+    "weight": 35,
+    "unit" : "lbs",
+    "date" : "08-13-21"
+}
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Curls",
+    "reps": 30,
+    "weight": 25,
+    "unit" : "lbs",
+    "date" : "08-13-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Prisoner Push Ups",
+    "reps": 5,
+    "weight": 0,
+    "unit" : "lbs",
+    "date" : "08-10-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sit Ups",
+    "reps": 25,
+    "weight": 0,
+    "unit" : "lbs",
+    "date" : "07-13-21"
+}
+
+
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Push Ups",
+    "reps": 25,
+    "weight": 0,
+    "unit" : "lbs",
+    "date" : "08-11-21"
+}
