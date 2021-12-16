@@ -15,7 +15,7 @@ function HomePage({ setExerciseToEdit }) {
         if (response.status === 204) {
             setExercises(exercises.filter(exercise => exercise._id !== _id));
         } else {
-            console.error(`Failed to delete movie with _id = ${_id}, status code = ${response.status}`);
+            console.error(`Failed to delete exercise with _id = ${_id}, status code = ${response.status}`);
         }
     };
 
@@ -36,7 +36,7 @@ function HomePage({ setExerciseToEdit }) {
 
     return (
         <>
-            <h2>List of Movies</h2>
+            <h2>List of Exercises</h2>
             <Link to="/create_exercise">Add A New Exercise</Link>
             <ExerciseList exercises={exercises} onDelete={onDelete} onEdit={onEdit}></ExerciseList>
         </>

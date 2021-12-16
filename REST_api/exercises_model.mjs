@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 // Prepare to connect to the database 'exercises' in the MongoDB server running locally on port 27017
 mongoose.connect(
     "mongodb://localhost:27017/exercises",
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    { useNewUrlParser: true, useUnifiedTopology: true, }
 );
 
 // Connect to to the database
@@ -15,7 +15,7 @@ db.once("open", () => {
 });
 
 // Tell mongoose to create indexes, which help with faster querying
-mongoose.set("useCreateIndex", true);
+mongoose.set("autoIndex",true);
 
 /**
  * Define the schema
